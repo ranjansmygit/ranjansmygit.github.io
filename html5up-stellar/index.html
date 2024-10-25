@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SoumyaRanjanb Application Security</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Soumya Ranjan B</B></h1>
+						<p>Security professional with hands on experince in Securing apllication lifecycle, security consulatant </br> Micro-service Architecture.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">First Section</a></li>
+							<li><a href="#second">Second Section</a></li>
+							<li><a href="#cta">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Experienced Application Security Specialist</h2>
+										</header>
+										<p>As a seasoned security professional with over a decade of hands-on experience in product security, 
+											my expertise lies in designing, securing, and deploying scalable microservice architectures. 
+											From application development to continuous security monitoring, I’ve been at the forefront of delivering cutting-edge solutions to ensure 
+											the security and efficiency of cloud-native, API-driven environments. Whether it’s securing DevOps pipelines or implementing security posture management 
+											for complex infrastructures, I am committed to integrating security seamlessly into every phase of the development lifecycle.</p>
+										<ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Skills</h2>
+								</header>
+								<!-- <section id="skills" class="main special"> //Start
+									<div class="content">
+										<div id="array"></div>
+										<label for="fname">Enter skill to search:</label>
+										<input type="text" id="fname" name="fname">
+										!-- <button id="btn" onclick="Search()">Search</button> --
+										<a class="button" onclick="Search()">Search</a>
+						
+										<div id="text"></div>
+									</div>
+									<script>
+										const skillsData = [
+											{ skill: 'CyberSecurity', experience: 14 },
+											{ skill: 'JavaScript', experience: 8 },
+											{ skill: 'Python', experience: 12 },
+											{ skill: 'Docker', experience: 5 },
+											{ skill: 'NodeJS', experience: 4 },
+											{ skill: 'PyTorch', experience: 9 },
+											{ skill: 'Django', experience: 6 },
+											{ skill: 'Azure', experience: 4 },
+											{ skill: 'Kubernetes', experience: 3 },
+											{ skill: 'ThreatModeling', experience: 6 },
+											{ skill: 'AWS', experience: 4 },
+											{ skill: 'TensorFlow', experience: 2 }
+										];
+								
+										var container = document.getElementById("array");
+								
+										function generatearray() {
+											for (var i = 0; i < skillsData.length; i++) {
+												var skill = skillsData[i].skill;
+												var years = skillsData[i].experience;
+								
+												var array_ele = document.createElement("div");
+												array_ele.classList.add("block");
+								
+												array_ele.style.height = `${years * 15}px`;
+												array_ele.style.transform = `translate(${i * 60}px)`;
+								
+												var array_ele_label = document.createElement("label");
+												array_ele_label.classList.add("block_id");
+												array_ele_label.innerText = skill;
+								
+												array_ele.appendChild(array_ele_label);
+												container.appendChild(array_ele);
+											}
+										}
+								
+										async function Search(delay = 300) {
+											var blocks = document.querySelectorAll(".block");
+											var output = document.getElementById("text");
+								
+											var searchSkill = document.getElementById("fname").value.trim();
+								
+											for (var i = 0; i < blocks.length; i += 1) {
+												blocks[i].style.backgroundColor = "#00ffff";
+											}
+								
+											output.innerText = "";
+								
+											var flag = 0;
+											for (var i = 0; i < blocks.length; i += 1) {
+												blocks[i].style.backgroundColor = "#FF4949";
+								
+												await new Promise((resolve) =>
+													setTimeout(() => {
+														resolve();
+													}, delay)
+												);
+								
+												var currentSkill = blocks[i].childNodes[0].innerText;
+								
+												if (currentSkill.toLowerCase() === searchSkill.toLowerCase()) {
+													flag = 1;
+													output.innerText = `Skill "${currentSkill}" found!`;
+													blocks[i].style.backgroundColor = "#13CE66";
+													break;
+												} else {
+													blocks[i].style.backgroundColor = "#00ffff";
+												}
+											}
+								
+											if (flag === 0) {
+												output.innerText = `Skill "${searchSkill}" not found.`;
+											}
+										}
+								
+										window.addEventListener("load", generatearray);
+								
+										const observer = new IntersectionObserver(entries => {
+											entries.forEach(entry => {
+												if (entry.isIntersecting) {
+													entry.target.classList.add('active');
+												}
+											});
+										}, { threshold: 0.1 });
+								
+										document.querySelectorAll('.section').forEach(section => {
+											observer.observe(section);
+										});
+									</script>
+								</section> //End -->
+								<!--
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-code"></span>
+										<h3>Ipsum consequat</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Amed sed feugiat</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<h3>Dolor nullam</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+								</ul>
+							--> 
+							<section id="skills" class="main special">
+								<div class="content">
+									<div id="array"></div>
+									
+									<!-- Skill Search Bar -->
+									<label for="fname">Enter skill to search:</label>
+									<input type="text" id="fname" name="fname" oninput="filterSkills()">
+									
+									<div id="text"></div>
+								</div>
+							
+								<!-- <style>
+									/* Styling for skill blocks */
+									.block {
+										width: 50px;
+										background-color: #00ffff;
+										margin: 10px;
+										display: inline-block;
+										position: relative;
+										transition: background-color 0.3s ease;
+									}
+							
+									/* Hover effect for tooltip */
+									.block:hover .tooltip {
+										visibility: visible;
+										opacity: 1;
+									}
+							
+									/* Styling for skill labels */
+									.block_id {
+										text-align: center;
+										margin-top: 10px;
+										font-size: 14px;
+									}
+							
+									/* Tooltip styling */
+									.tooltip {
+										visibility: hidden;
+										background-color: black;
+										color: #fff;
+										text-align: center;
+										border-radius: 5px;
+										padding: 5px;
+										position: absolute;
+										z-index: 1;
+										bottom: 125%; /* Position the tooltip above the block */
+										left: 50%;
+										margin-left: -40px;
+										opacity: 0;
+										transition: opacity 0.3s;
+									}
+							
+									/* Arrow for tooltip */
+									.tooltip::after {
+										content: "";
+										position: absolute;
+										top: 100%;
+										left: 50%;
+										margin-left: -5px;
+										border-width: 5px;
+										border-style: solid;
+										border-color: black transparent transparent transparent;
+									}
+								</style>
+							 -->
+								<script>
+									const skillsData = [
+										{ skill: 'CyberSecurity', experience: 14, description: 'Deep experience in securing systems.' },
+										{ skill: 'JavaScript', experience: 8, description: 'Expertise in front-end development.' },
+										{ skill: 'Python', experience: 12, description: 'Strong experience in scripting and automation.' },
+										{ skill: 'Docker', experience: 5, description: 'Experience in containerization.' },
+										{ skill: 'NodeJS', experience: 4, description: 'Backend development using NodeJS.' },
+										{ skill: 'PyTorch', experience: 9, description: 'Worked on AI models using PyTorch.' },
+										{ skill: 'Django', experience: 6, description: 'Web development with Django.' },
+										{ skill: 'Azure', experience: 4, description: 'Cloud security experience.' },
+										{ skill: 'Kubernetes', experience: 3, description: 'Orchestration experience using Kubernetes.' },
+										{ skill: 'ThreatModeling', experience: 6, description: 'Threat modeling expert.' },
+										{ skill: 'AWS', experience: 4, description: 'Cloud architecture on AWS.' },
+										{ skill: 'TensorFlow', experience: 2, description: 'Worked on ML models using TensorFlow.' }
+									];
+							
+									var container = document.getElementById("array");
+							
+									function generatearray() {
+										for (var i = 0; i < skillsData.length; i++) {
+											var skill = skillsData[i].skill;
+											var years = skillsData[i].experience;
+											var description = skillsData[i].description;
+							
+											// Create skill block
+											var array_ele = document.createElement("div");
+											array_ele.classList.add("block");
+											array_ele.style.height = `${years * 15}px`;
+											array_ele.style.transform = `translate(${i * 60}px)`;
+							
+											// Skill label
+											var array_ele_label = document.createElement("label");
+											array_ele_label.classList.add("block_id");
+											array_ele_label.innerText = skill;
+							
+											// Tooltip for additional details
+											var tooltip = document.createElement("div");
+											tooltip.classList.add("tooltip");
+											tooltip.innerText = `${years} years experience\n${description}`;
+							
+											// Append label and tooltip to block
+											array_ele.appendChild(array_ele_label);
+											array_ele.appendChild(tooltip);
+							
+											container.appendChild(array_ele);
+										}
+									}
+							
+									// Search and filter functionality
+									function filterSkills() {
+										var searchSkill = document.getElementById("fname").value.trim().toLowerCase();
+										var blocks = document.querySelectorAll(".block");
+										var output = document.getElementById("text");
+										var found = false;
+							
+										// Iterate through each skill block
+										blocks.forEach((block, i) => {
+											var currentSkill = block.childNodes[0].innerText.toLowerCase();
+							
+											if (currentSkill.includes(searchSkill)) {
+												block.style.visibility = "visible"; // Keep the space, make it visible
+            									block.style.opacity = "1";
+												//block.style.display = "inline-block";
+    											block.style.backgroundColor = "#debee1"; // Highlight found skill
+												found = true;
+											} else {
+												//block.style.display = "none";
+												block.style.visibility = "hidden"; // Make it invisible without removing from layout
+            									block.style.opacity = "0"; // Transparent to be completely hidden
+											}
+										});
+							
+										if (!found && searchSkill) {
+											output.innerText = `Skill "${searchSkill}" not found.`;
+										} else {
+											output.innerText = "";
+										}
+									}
+							
+									// Initialize skill array on load
+									window.addEventListener("load", generatearray);
+								</script>
+							</section>
+								<footer class="major">
+								<!--<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>-->
+								</footer>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Building Secure & Scalable Microservice Architectures</h2>
+									<p>With over a decade of experience in product security, I specialize in delivering secure, scalable applications.
+										</br> My expertise spans the entire product lifecycle, from initial design to development, securing CI/CD pipelines, 
+										and implementing robust security controls for cloud-based infrastructures. Let me help you build resilient, secure, and efficient systems tailored to your needs.</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>68</strong> Secured Devops implemention
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>32</strong> Microservices Secured
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>38</strong> Successful ThreatModeling
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>750</strong> Vulnerabilities Identified Triaged
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>108</strong> Security Solutions Crafted
+									</li>
+								</ul>
+								<p class="content">I specialize in securing modern, cloud-based, and microservice architectures through a combination of design-driven development, 
+									proactive security posture management, and real-time monitoring. </br> My approach integrates continuous security monitoring, dependency management, 
+									and seamless DevOps integration to ensure that security remains an enabler, patching organisational silos.</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Innovative Solutions</h2>
+									<p>Leverage cutting-edge technologies and industry best practices to deliver scalable, efficient, and secure solutions. 
+										Passionate about solving intricate problems and turning ideas into impactful results.</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Get Started</a></li>
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Approach to Development</h2>
+							<p>My methodology is centered around understanding both the technical and business sides of each project. With a focus on user experience, 
+								performance optimization, and security, I ensure every solution is built to meet the unique needs of the project. From initial concept to final deployment, 
+								I guarantee that every step is aligned with your goals.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Get in Touch</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>Bangalore South <!--&bull; Nashville, TN 00000--> &bull; India</dd>
+								<dt>Phone</dt>
+								<dd>(+91) 9XXXXXXXX5</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:ranjan.smy@gmail.com">ranjan.smy@gmail.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<!--
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>-->
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
