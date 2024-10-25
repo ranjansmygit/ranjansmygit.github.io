@@ -57,127 +57,6 @@
 								<header class="major">
 									<h2>Skills</h2>
 								</header>
-								<!-- <section id="skills" class="main special"> //Start
-									<div class="content">
-										<div id="array"></div>
-										<label for="fname">Enter skill to search:</label>
-										<input type="text" id="fname" name="fname">
-										!-- <button id="btn" onclick="Search()">Search</button> --
-										<a class="button" onclick="Search()">Search</a>
-						
-										<div id="text"></div>
-									</div>
-									<script>
-										const skillsData = [
-											{ skill: 'CyberSecurity', experience: 14 },
-											{ skill: 'JavaScript', experience: 8 },
-											{ skill: 'Python', experience: 12 },
-											{ skill: 'Docker', experience: 5 },
-											{ skill: 'NodeJS', experience: 4 },
-											{ skill: 'PyTorch', experience: 9 },
-											{ skill: 'Django', experience: 6 },
-											{ skill: 'Azure', experience: 4 },
-											{ skill: 'Kubernetes', experience: 3 },
-											{ skill: 'ThreatModeling', experience: 6 },
-											{ skill: 'AWS', experience: 4 },
-											{ skill: 'TensorFlow', experience: 2 }
-										];
-								
-										var container = document.getElementById("array");
-								
-										function generatearray() {
-											for (var i = 0; i < skillsData.length; i++) {
-												var skill = skillsData[i].skill;
-												var years = skillsData[i].experience;
-								
-												var array_ele = document.createElement("div");
-												array_ele.classList.add("block");
-								
-												array_ele.style.height = `${years * 15}px`;
-												array_ele.style.transform = `translate(${i * 60}px)`;
-								
-												var array_ele_label = document.createElement("label");
-												array_ele_label.classList.add("block_id");
-												array_ele_label.innerText = skill;
-								
-												array_ele.appendChild(array_ele_label);
-												container.appendChild(array_ele);
-											}
-										}
-								
-										async function Search(delay = 300) {
-											var blocks = document.querySelectorAll(".block");
-											var output = document.getElementById("text");
-								
-											var searchSkill = document.getElementById("fname").value.trim();
-								
-											for (var i = 0; i < blocks.length; i += 1) {
-												blocks[i].style.backgroundColor = "#00ffff";
-											}
-								
-											output.innerText = "";
-								
-											var flag = 0;
-											for (var i = 0; i < blocks.length; i += 1) {
-												blocks[i].style.backgroundColor = "#FF4949";
-								
-												await new Promise((resolve) =>
-													setTimeout(() => {
-														resolve();
-													}, delay)
-												);
-								
-												var currentSkill = blocks[i].childNodes[0].innerText;
-								
-												if (currentSkill.toLowerCase() === searchSkill.toLowerCase()) {
-													flag = 1;
-													output.innerText = `Skill "${currentSkill}" found!`;
-													blocks[i].style.backgroundColor = "#13CE66";
-													break;
-												} else {
-													blocks[i].style.backgroundColor = "#00ffff";
-												}
-											}
-								
-											if (flag === 0) {
-												output.innerText = `Skill "${searchSkill}" not found.`;
-											}
-										}
-								
-										window.addEventListener("load", generatearray);
-								
-										const observer = new IntersectionObserver(entries => {
-											entries.forEach(entry => {
-												if (entry.isIntersecting) {
-													entry.target.classList.add('active');
-												}
-											});
-										}, { threshold: 0.1 });
-								
-										document.querySelectorAll('.section').forEach(section => {
-											observer.observe(section);
-										});
-									</script>
-								</section> //End -->
-								<!--
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-							--> 
 							<section id="skills" class="main special">
 								<div class="content">
 									<div id="array"></div>
@@ -188,61 +67,6 @@
 									
 									<div id="text"></div>
 								</div>
-							
-								<!-- <style>
-									/* Styling for skill blocks */
-									.block {
-										width: 50px;
-										background-color: #00ffff;
-										margin: 10px;
-										display: inline-block;
-										position: relative;
-										transition: background-color 0.3s ease;
-									}
-							
-									/* Hover effect for tooltip */
-									.block:hover .tooltip {
-										visibility: visible;
-										opacity: 1;
-									}
-							
-									/* Styling for skill labels */
-									.block_id {
-										text-align: center;
-										margin-top: 10px;
-										font-size: 14px;
-									}
-							
-									/* Tooltip styling */
-									.tooltip {
-										visibility: hidden;
-										background-color: black;
-										color: #fff;
-										text-align: center;
-										border-radius: 5px;
-										padding: 5px;
-										position: absolute;
-										z-index: 1;
-										bottom: 125%; /* Position the tooltip above the block */
-										left: 50%;
-										margin-left: -40px;
-										opacity: 0;
-										transition: opacity 0.3s;
-									}
-							
-									/* Arrow for tooltip */
-									.tooltip::after {
-										content: "";
-										position: absolute;
-										top: 100%;
-										left: 50%;
-										margin-left: -5px;
-										border-width: 5px;
-										border-style: solid;
-										border-color: black transparent transparent transparent;
-									}
-								</style>
-							 -->
 								<script>
 									const skillsData = [
 										{ skill: 'CyberSecurity', experience: 14, description: 'Deep experience in securing systems.' },
@@ -394,9 +218,12 @@
 					<footer id="footer">
 						<section>
 							<h2>Approach to Development</h2>
-							<p>My methodology is centered around understanding both the technical and business sides of each project. With a focus on user experience, 
-								performance optimization, and security, I ensure every solution is built to meet the unique needs of the project. From initial concept to final deployment, 
-								I guarantee that every step is aligned with your goals.</p>
+							<p>
+								<li>Understanding both technical and business sides.</li>
+								<li>Building secure, scalable, and optimized systems.</li>
+								<li>Implementing robust security postures through DevSecOps, automation, and continuous monitoring.</li>
+								<li>Ensuring the long-term security and performance of deployed systems through consistent audits and updates.</li>
+							</p>
 							<ul class="actions">
 								<li><a href="generic.html" class="button">Learn More</a></li>
 							</ul>

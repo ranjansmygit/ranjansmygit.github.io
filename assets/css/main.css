@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3783,44 +3777,6 @@ input, select, textarea {
 			}
 
 		}
-/* Skill Section Styling
-#array {
-    background-color: transparent; /* Change this to transparent to match the section's background 
-    height: 300px;
-    width: 100%; /* Adjust width if necessary 
-    margin: 40px 0; /* Adjust margins 
-    position: relative;
-	display: relative;	
-	justify-content: space-around;
-	align-items: stretch;
-}
-#btn:hover {
-    background-color: #d9bce7; /* Darker shade on hover 
-}
-/* Each Skill Bar 
-.block {
-	width: 50px;
-	background-color: #debee1;  
-    position: absolute;
-    bottom: 10px;
-	padding-top: 10;
-    transition: 0.2s all ease;
-	text-align: center;
-	margin: 0 10px;
-	flex-shrink: 0;
-	font-size: calc(0.8vw + 10px);
-	}  
-/* Adjust the label if it's causing the issue 
-.block_id {
-    /* position: absolute; 
-    color: black; /* Text color 
-    margin-top: -30px; /* Adjust this value to fit 
-	width: 100%;
-	border-width: 20px;
-	text-align: justify;
-	font-size: calc(0.5vw + 5px);
-} */
-/* Skill Section Styling */
 #array {
     background-color: transparent; /* Matches the section's background */
     height: 300px;
@@ -3839,7 +3795,8 @@ input, select, textarea {
 
 /* Each Skill Bar */
 .block {
-    width: calc(100% / 12 - 20px);
+    /*width: calc(100% / 12 - 20px);*/
+	width: 50px;
     background-color: #debee1; /* Default background for skill bars */
     position: absolute;
     bottom: 0; /* Anchors the blocks to the bottom of the container */
@@ -3866,7 +3823,8 @@ input, select, textarea {
 /* Tooltip for hover effect */
 .tooltip {
     visibility: hidden; /* Hidden by default */
-    background-color: rgba(200, 171, 225, 0.708); /* Tooltip background */
+    background-color: rgba(58, 85, 150, 0.708); /* Tooltip background */
+	font-size: calc(0.5vw + 5px);
     color: #fff; /* Tooltip text color */
     text-align: center;
     border-radius: 5px;
